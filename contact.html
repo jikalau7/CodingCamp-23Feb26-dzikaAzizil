@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact - Dzika Azizil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CDN (hapus kalau sudah pakai build) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body class="text-white bg-[#0f172a]">
+    <!-- NAVBAR -->
+    <header>
+      <div
+        class="absolute top-0 left-0 w-screen h-40 bg-cyan-400 blur-3xl opacity-20"
+      ></div>
+
+      <nav
+        id="navbar"
+        class="fixed top-0 left-0 w-full z-50 transition-all duration-500"
+      >
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+          <div class="flex items-center justify-between h-20">
+            <div class="font-semibold text-lg"><a href="index.html">DzikaAzizil</a></div>
+
+            <div class="hidden md:flex gap-10 font-medium">
+              <a href="index.html" class="hover:text-cyan-400 transition"
+                >Home</a
+              >
+              <a href="about.html" class="hover:text-cyan-400 transition"
+                >About</a
+              >
+              <a href="project.html" class="hover:text-cyan-400 transition"
+                >Projects</a
+              >
+              <a href="experience.html" class="hover:text-cyan-400 transition"
+                >Experience</a
+              >
+              <a href="contact.html" class="hover:text-cyan-400 transition"
+                >Contact</a
+              >
+            </div>
+
+            <button id="menuBtn" class="md:hidden text-white text-2xl">
+              ☰
+            </button>
+          </div>
+        </div>
+
+        <div
+          id="mobileMenu"
+          class="md:hidden absolute top-full left-0 w-full overflow-hidden max-h-0 opacity-0 transition-all duration-500"
+        >
+          <div
+            class="bg-[#0a0f2c] backdrop-blur-xl border-b border-cyan-400/20 shadow-lg shadow-cyan-500/10"
+          >
+            <div
+              class="flex flex-col items-center gap-6 py-8 text-gray-300 font-medium"
+            >
+              <a href="#overview" class="hover:text-cyan-400 transition"
+                >About</a
+              >
+              <a href="#projects" class="hover:text-cyan-400 transition"
+                >Projects</a
+              >
+              <a href="#experience" class="hover:text-cyan-400 transition"
+                >Experience</a
+              >
+              <a href="#contact" class="hover:text-cyan-400 transition"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- HEADER -->
+    <section class="py-20 px-6 md:px-16 text-left pt-20 pb-24 bg-[#0a0f2c]">
+      <h1 class="text-5xl font-bold mb-4">
+        Get In <span class="text-cyan-500">Touch</span>
+      </h1>
+      <p class="text-gray-400 max-w-2xl">
+        Tertarik bekerja sama atau ingin berdiskusi tentang project? Silakan
+        hubungi saya melalui form di bawah ini.
+      </p>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="pb-24 px-6 md:px-16 bg-[#0a0f2c]">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
+        <!-- LEFT INFO -->
+        <div>
+          <h2 class="text-3xl font-semibold mb-8">
+            Contact <span class="text-cyan-500">Information</span>
+          </h2>
+
+          <div class="space-y-6">
+            <div
+              class="flex items-center gap-4 bg-[#1d1836] p-5 rounded-xl border border-white/10 hover:border-cyan-500 transition"
+            >
+              <i class="fa-solid fa-user text-cyan-500 text-xl"></i>
+              <div>
+                <p class="text-gray-400 text-sm">Name</p>
+                <p class="font-medium">Dzika Azizil Julfikri</p>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center gap-4 bg-[#1d1836] p-5 rounded-xl border border-white/10 hover:border-cyan-500 transition"
+            >
+              <i class="fa-solid fa-envelope text-cyan-500 text-xl"></i>
+              <div>
+                <p class="text-gray-400 text-sm">Email</p>
+                <p class="font-medium">azizildzika@gmail.com</p>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center gap-4 bg-[#1d1836] p-5 rounded-xl border border-white/10 hover:border-cyan-500 transition"
+            >
+              <i class="fa-solid fa-phone text-cyan-500 text-xl"></i>
+              <div>
+                <p class="text-gray-400 text-sm">Phone</p>
+                <p class="font-medium">+62 8xxxxxxxxxx</p>
+              </div>
+            </div>
+
+            <div
+              class="flex items-center gap-4 bg-[#1d1836] p-5 rounded-xl border border-white/10 hover:border-cyan-500 transition"
+            >
+              <i class="fa-solid fa-location-dot text-cyan-500 text-xl"></i>
+              <div>
+                <p class="text-gray-400 text-sm">Location</p>
+                <p class="font-medium">Cimahi, Indonesia</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- SOCIAL -->
+          <div class="mt-10">
+            <p class="text-gray-400 mb-4">Follow Me</p>
+            <div class="flex gap-5 text-xl">
+              <a
+                href="https://www.instagram.com/dzikaazizil_/"
+                target="_blank"
+                class="hover:text-cyan-500 transition"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://github.com/jikalau7"
+                target="_blank"
+                class="hover:text-cyan-500 transition"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="https://id.linkedin.com/in/dzika-azizil"
+                target="_blank"
+                class="hover:text-cyan-500 transition"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT FORM -->
+        <div
+          class="bg-[#1d1836] p-10 rounded-2xl border border-white/10 shadow-lg"
+        >
+          <h2 class="text-3xl font-semibold mb-8">
+            Send <span class="text-cyan-500">Message</span>
+          </h2>
+
+          <form action="#" method="POST" class="space-y-6">
+            <div>
+              <label class="block text-sm text-gray-400 mb-2">Your Name</label>
+              <input
+                type="text"
+                placeholder="Enter your name"
+                class="w-full bg-[#0f0f0f] border border-white/10 rounded-lg px-4 py-3 focus:border-cyan-500 focus:outline-none transition"
+              />
+            </div>
+
+            <div>
+              <label class="block text-sm text-gray-400 mb-2">Your Email</label>
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="w-full bg-[#0f0f0f] border border-white/10 rounded-lg px-4 py-3 focus:border-cyan-500 focus:outline-none transition"
+              />
+            </div>
+
+            <div>
+              <label class="block text-sm text-gray-400 mb-2">Message</label>
+              <textarea
+                rows="4"
+                placeholder="Write your message..."
+                class="w-full bg-[#0f0f0f] border border-white/10 rounded-lg px-4 py-3 focus:border-cyan-500 focus:outline-none transition"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full py-3 bg-gradient-to-r from-cyan-600 to-cyan-600 rounded-lg font-medium hover:scale-105 transition duration-300"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#0a0f2c] text-white border-t border-cyan-400/20 ">
+      <div class="max-w-6xl mx-auto px-6 py-12">
+        <div class="grid md:grid-cols-3 gap-10">
+          <!-- Brand -->
+          <div>
+            <h3 class="text-2xl font-bold">
+              Dzika<span class="text-cyan-400">.</span>
+            </h3>
+            <p class="text-gray-400 mt-4 leading-relaxed">
+              Frontend Developer passionate about building modern, interactive
+              and user-friendly web experiences.
+            </p>
+          </div>
+
+          <!-- Navigation -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Navigation</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="index.html" class="hover:text-cyan-400 transition"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="about.html" class="hover:text-cyan-400 transition"
+                  >Overview</a
+                >
+              </li>
+              <li>
+                <a href="project.html" class="hover:text-cyan-400 transition"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a href="experience.html" class="hover:text-cyan-400 transition"
+                  >Experience</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="hover:text-cyan-400 transition"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Connect</h4>
+
+            <div class="flex gap-4">
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-lg bg-white border border-cyan-400/20 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/30 transition"
+              >
+                <img src="assets/linkedin-svgrepo-com.svg" class="size-10" />
+              </a>
+
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-lg bg-white border border-cyan-400/20 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/30 transition"
+              >
+                <img src="assets/github-142-svgrepo-com.svg" class="size-10" />
+              </a>
+
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-lg bg-white border border-cyan-400/20 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/30 transition"
+              >
+                <img
+                  src="assets/instagram-167-svgrepo-com.svg"
+                  class="size-10"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div
+          class="border-t border-cyan-400/10 mt-12 pt-6 text-center text-gray-500 text-sm"
+        >
+          © 2026 Dzika Azizil. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

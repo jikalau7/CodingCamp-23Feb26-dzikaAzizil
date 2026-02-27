@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overview - Dzika Azizil</title>
+    <style>
+      .skill-ball {
+        background: radial-gradient(
+          circle at 30% 30%,
+          rgba(34, 211, 238, 0.25),
+          rgba(15, 23, 42, 0.8)
+        );
+        border: 1px solid rgba(34, 211, 238, 0.2);
+        backdrop-filter: blur(15px);
+        box-shadow: 0 0 40px rgba(34, 211, 238, 0.15);
+        transition: all 0.4s ease;
+      }
+
+      .skill-ball:hover {
+        transform: translateY(-10px) scale(1.05);
+        box-shadow: 0 0 60px rgba(34, 211, 238, 0.4);
+      }
+    </style>
+  </head>
+  <body class="text-white bg-[#0f172a]">
+    <!-- NAVBAR -->
+    <header>
+      <div
+        class="absolute top-0 left-0 w-screen h-40 bg-cyan-400 blur-3xl opacity-20"
+      ></div>
+
+      <nav
+        id="navbar"
+        class="fixed top-0 left-0 w-full z-50 transition-all duration-500"
+      >
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+          <div class="flex items-center justify-between h-20">
+            <div class="font-semibold text-lg"><a href="index.html">DzikaAzizil</a></div>
+
+            <div class="hidden md:flex gap-10 font-medium">
+              <a href="index.html" class="hover:text-cyan-400 transition"
+                >Home</a
+              >
+              <a href="about.html" class="hover:text-cyan-400 transition"
+                >About</a
+              >
+              <a href="project.html" class="hover:text-cyan-400 transition"
+                >Projects</a
+              >
+              <a href="experience.html" class="hover:text-cyan-400 transition"
+                >Experience</a
+              >
+              <a href="contact.html" class="hover:text-cyan-400 transition"
+                >Contact</a
+              >
+            </div>
+
+            <button id="menuBtn" class="md:hidden text-white text-2xl">
+              ☰
+            </button>
+          </div>
+        </div>
+
+        <div
+          id="mobileMenu"
+          class="md:hidden absolute top-full left-0 w-full overflow-hidden max-h-0 opacity-0 transition-all duration-500"
+        >
+          <div
+            class="bg-[#0a0f2c] backdrop-blur-xl border-b border-cyan-400/20 shadow-lg shadow-cyan-500/10"
+          >
+            <div
+              class="flex flex-col items-center gap-6 py-8 text-gray-300 font-medium"
+            >
+              <a href="#overview" class="hover:text-cyan-400 transition"
+                >About</a
+              >
+              <a href="#projects" class="hover:text-cyan-400 transition"
+                >Projects</a
+              >
+              <a href="#experience" class="hover:text-cyan-400 transition"
+                >Experience</a
+              >
+              <a href="#contact" class="hover:text-cyan-400 transition"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section
+      id="about"
+      class="w-full min-h-screen bg-[#0a0f2c] text-white py-20 px-6 md:px-16"
+    >
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-14 items-center">
+        <!-- LEFT IMAGE -->
+        <div class="flex justify-center md:justify-start">
+          <div class="relative group">
+            <div
+              class="absolute -inset-1 bg-gradient-to-r from-cyan-600 to-cyan-600 rounded-2xl blur opacity-40 group-hover:opacity-70 transition duration-500"
+            ></div>
+            <img
+              src="assets/IMG-20230512-WA0125.jpg"
+              class="relative w-80 md:w-96 rounded-2xl shadow-2xl object-cover"
+              alt="Dzika Azizil"
+            />
+          </div>
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div>
+          <!-- Title -->
+          <div class="mb-6">
+            <h2 class="text-4xl font-bold">
+              About <span class="text-cyan-400">Me</span>
+            </h2>
+            <p class="text-gray-400 mt-2 text-lg tracking-wide">
+              UI / UX Designer
+            </p>
+          </div>
+
+          <!-- Description -->
+          <p class="text-gray-300 leading-relaxed mb-8">
+            Siswa SMK jurusan Pengembangan Perangkat Lunak dan Gim dengan
+            keterampilan di bidang
+            <span class="text-cyan-400">Frontend Development</span> dan
+            <span class="text-cyan-400">Web Design</span>. Saya berambisi
+            mendapatkan kesempatan PKL untuk mengembangkan skill, berkontribusi
+            secara nyata, serta membantu perusahaan melalui solusi digital yang
+            modern dan user-friendly.
+          </p>
+
+          <!-- BIODATA GRID -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+            <div
+              class="bg-[#1d1836] p-4 rounded-xl border border-white/10 hover:border-cyan-500 transition"
+            >
+              <p class="text-sm text-gray-400">Nama</p>
+              <p class="font-semibold">Dzika Azizil Julfikri</p>
+            </div>
+
+            <div
+              class="bg-[#1d1836] p-4 rounded-xl border border-white/10 hover:border-cyan-500 transition"
+            >
+              <p class="text-sm text-gray-400">Email</p>
+              <p class="font-semibold">azizildzika@gmail.com</p>
+            </div>
+
+            <div
+              class="bg-[#1d1836] p-4 rounded-xl border border-white/10 hover:border-cyan-500 transition"
+            >
+              <p class="text-sm text-gray-400">Tanggal Lahir</p>
+              <p class="font-semibold">28 Juli 2007</p>
+            </div>
+
+            <div
+              class="bg-[#1d1836] p-4 rounded-xl border border-white/10 hover:border-cyan-500 transition"
+            >
+              <p class="text-sm text-gray-400">Alamat</p>
+              <p class="font-semibold">Jl Raya Cibabat Gg Karya Bhakti 7</p>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <div class="flex flex-wrap items-center gap-6">
+            <a
+              href="https://drive.google.com/file/d/1-d0PuNrkURaHEdmqExoCF6Kk11tZmcNf/view?usp=drive_link"
+              target="_blank"
+              class="px-6 py-3 bg-gradient-to-r from-cyan-600 to-cyan-600 rounded-full font-medium hover:scale-105 transition transform duration-300 shadow-lg"
+            >
+              Download CV
+            </a>
+
+            <!-- Social Icons -->
+            <div class="flex items-center gap-4 text-xl">
+              <a
+                href="https://www.instagram.com/dzikaazizil_/"
+                target="_blank"
+                class="hover:text-cyan-400 transition"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+
+              <a
+                href="https://github.com/jikalau7"
+                target="_blank"
+                class="hover:text-cyan-400 transition"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+
+              <a
+                href="https://id.linkedin.com/in/dzika-azizil"
+                target="_blank"
+                class="hover:text-cyan-400 transition"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OVERVIEW -->
+
+    <section id="overview" class="relative py-32 px-6 bg-[#0a0f2c]">
+      <div class="max-w-7xl mx-auto">
+        <!-- Heading -->
+        <p class="text-sm tracking-widest text-gray-400 uppercase">
+          Introduction
+        </p>
+
+        <h2 class="text-5xl md:text-6xl font-extrabold mt-3">
+          Overview<span class="text-cyan-400">.</span>
+        </h2>
+
+        <!-- Description -->
+        <p
+          class="mt-8 text-gray-400 max-w-3xl leading-relaxed text-base md:text-lg"
+        >
+          I'm a skilled software developer with experience in TypeScript and
+          JavaScript, and expertise in frameworks like React, Node.js, and
+          modern web technologies. I specialize in building scalable, efficient,
+          and user-focused digital products with clean design and strong
+          performance.
+        </p>
+
+        <!-- Skill Cards -->
+        <div class="mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          <!-- Card 1 -->
+          <div
+            class="group bg-[#1d1836] rounded-2xl p-8 border border-cyan-400/10 hover:border-cyan-400/40 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_35px_rgba(0,255,255,0.2)]"
+          >
+            <div class="text-4xl mb-6 text-cyan-400">
+              <img
+                src="assets/coding-program-website-computer-technology-svgrepo-com.svg"
+                class="size-8 p-1 rounded-full bg-white"
+              />
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Web Developer</h3>
+            <p class="text-gray-400 text-sm">
+              Building responsive and scalable web applications.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="group bg-[#1d1836] rounded-2xl p-8 border border-cyan-400/10 hover:border-cyan-400/40 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_35px_rgba(0,255,255,0.2)]"
+          >
+            <img
+              src="assets/setting-machine-equipment-wheel-cog-svgrepo-com.svg"
+              class="size-8 p-1 rounded-full bg-white"
+            />
+            <h3 class="text-lg font-semibold mb-2">Backend Developer</h3>
+            <p class="text-gray-400 text-sm">
+              Designing APIs and managing database architecture.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="group bg-[#1d1836] rounded-2xl p-8 border border-cyan-400/10 hover:border-cyan-400/40 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_35px_rgba(0,255,255,0.2)]"
+          >
+            <img
+              src="assets/vision-eye-business-see-look-svgrepo-com.svg"
+              class="size-8 p-1 rounded-full bg-white"
+            />
+            <h3 class="text-lg font-semibold mb-2">UI/UX Focused</h3>
+            <p class="text-gray-400 text-sm">
+              Designing clean and intuitive user experiences.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="group bg-[#1d1836] rounded-2xl p-8 border border-cyan-400/10 hover:border-cyan-400/40 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_35px_rgba(0,255,255,0.2)]"
+          >
+            <img
+              src="assets/binocular-navigation-discovery-vision-zoom-svgrepo-com.svg"
+              class="size-8 p-1 rounded-full bg-white"
+            />
+            <h3 class="text-lg font-semibold mb-2">Problem Solve</h3>
+            <p class="text-gray-400 text-sm">
+              Creating cross-platform mobile applications.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="relative py-32 px-6 bg-[#0a0f2c]">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-5xl md:text-6xl font-extrabold mt-3">
+          My <span class="text-cyan-400">Skills</span>
+        </h2>
+
+        <div
+          class="flex flex-wrap justify-center gap-12 max-w-5xl mx-auto mt-15"
+        >
+          <!-- HTML -->
+          <div class="text-center">
+            <div
+              class="skill-ball w-32 h-32 rounded-full flex items-center justify-center mx-auto"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                class="w-14"
+              />
+            </div>
+            <p class="mt-4 text-gray-300">HTML5</p>
+          </div>
+
+          <!-- CSS -->
+          <div class="text-center">
+            <div
+              class="skill-ball w-32 h-32 rounded-full flex items-center justify-center mx-auto"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                class="w-14"
+              />
+            </div>
+            <p class="mt-4 text-gray-300">CSS3</p>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="text-center">
+            <div
+              class="skill-ball w-32 h-32 rounded-full flex items-center justify-center mx-auto"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                class="w-14"
+              />
+            </div>
+            <p class="mt-4 text-gray-300">JavaScript</p>
+          </div>
+
+          <!-- React -->
+          <div class="text-center">
+            <div
+              class="skill-ball w-32 h-32 rounded-full flex items-center justify-center mx-auto"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                class="w-14"
+              />
+            </div>
+            <p class="mt-4 text-gray-300">React</p>
+          </div>
+
+          <!-- Figma -->
+          <div class="text-center">
+            <div
+              class="skill-ball w-32 h-32 rounded-full flex items-center justify-center mx-auto"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                class="w-14"
+              />
+            </div>
+            <p class="mt-4 text-gray-300">Figma</p>
+          </div>
+
+          <!-- Git -->
+          <div class="text-center">
+            <div
+              class="skill-ball w-32 h-32 rounded-full flex items-center justify-center mx-auto"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                class="w-14"
+              />
+            </div>
+            <p class="mt-4 text-gray-300">Git</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#0a0f2c] text-white border-t border-cyan-400/20">
+      <div class="max-w-6xl mx-auto px-6 py-12">
+        <div class="grid md:grid-cols-3 gap-10">
+          <!-- Brand -->
+          <div>
+            <h3 class="text-2xl font-bold">
+              Dzika<span class="text-cyan-400">.</span>
+            </h3>
+            <p class="text-gray-400 mt-4 leading-relaxed">
+              Frontend Developer passionate about building modern, interactive
+              and user-friendly web experiences.
+            </p>
+          </div>
+
+          <!-- Navigation -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Navigation</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="#home" class="hover:text-cyan-400 transition">Home</a>
+              </li>
+              <li>
+                <a href="#overview" class="hover:text-cyan-400 transition"
+                  >Overview</a
+                >
+              </li>
+              <li>
+                <a href="#projects" class="hover:text-cyan-400 transition"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a href="#experience" class="hover:text-cyan-400 transition"
+                  >Experience</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="hover:text-cyan-400 transition"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Connect</h4>
+
+            <div class="flex gap-4">
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-lg bg-white border border-cyan-400/20 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/30 transition"
+              >
+                <img src="assets/linkedin-svgrepo-com.svg" class="size-10" />
+              </a>
+
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-lg bg-white border border-cyan-400/20 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/30 transition"
+              >
+                <img src="assets/github-142-svgrepo-com.svg" class="size-10" />
+              </a>
+
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-lg bg-white border border-cyan-400/20 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/30 transition"
+              >
+                <img
+                  src="assets/instagram-167-svgrepo-com.svg"
+                  class="size-10"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div
+          class="border-t border-cyan-400/10 mt-12 pt-6 text-center text-gray-500 text-sm"
+        >
+          © 2026 Dzika Azizil. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <!-- JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Projects - Dzika Azizil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CDN (hapus kalau sudah pakai build sendiri) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Vanilla Tilt -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body class="text-white bg-[#0f172a]">
+    <!-- NAVBAR -->
+    <header>
+      <div
+        class="absolute top-0 left-0 w-screen h-40 bg-cyan-400 blur-3xl opacity-20"
+      ></div>
+
+      <nav
+        id="navbar"
+        class="fixed top-0 left-0 w-full z-50 transition-all duration-500"
+      >
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+          <div class="flex items-center justify-between h-20">
+            <div class="font-semibold text-lg"><a href="index.html">DzikaAzizil</a></div>
+
+            <div class="hidden md:flex gap-10 font-medium">
+              <a href="index.html" class="hover:text-cyan-400 transition"
+                >Home</a
+              >
+              <a href="about.html" class="hover:text-cyan-400 transition"
+                >About</a
+              >
+              <a href="project.html" class="hover:text-cyan-400 transition"
+                >Projects</a
+              >
+              <a href="experience.html" class="hover:text-cyan-400 transition"
+                >Experience</a
+              >
+              <a href="contact.html" class="hover:text-cyan-400 transition"
+                >Contact</a
+              >
+            </div>
+
+            <button id="menuBtn" class="md:hidden text-white text-2xl">
+              ☰
+            </button>
+          </div>
+        </div>
+
+        <div
+          id="mobileMenu"
+          class="md:hidden absolute top-full left-0 w-full overflow-hidden max-h-0 opacity-0 transition-all duration-500"
+        >
+          <div
+            class="bg-[#0a0f2c] backdrop-blur-xl border-b border-cyan-400/20 shadow-lg shadow-cyan-500/10"
+          >
+            <div
+              class="flex flex-col items-center gap-6 py-8 text-gray-300 font-medium"
+            >
+              <a href="#overview" class="hover:text-cyan-400 transition"
+                >About</a
+              >
+              <a href="#projects" class="hover:text-cyan-400 transition"
+                >Projects</a
+              >
+              <a href="#experience" class="hover:text-cyan-400 transition"
+                >Experience</a
+              >
+              <a href="#contact" class="hover:text-cyan-400 transition"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Card -->
+    <section class="py-20 px-6 md:px-16 text-left pt-20 pb-24 bg-[#0a0f2c]">
+      <h1 class="text-5xl font-bold mb-4">
+        My <span class="text-cyan-500">Projects</span>
+      </h1>
+      <p class="text-gray-400 max-w-2xl ">
+        Berikut beberapa project yang telah saya kerjakan. Fokus pada frontend
+        development, UI/UX, dan sistem berbasis web modern.
+      </p>
+
+      <!-- PROJECT GRID -->
+
+      <div
+        class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-10 pt-12"
+      >
+        <!-- PROJECT CARD 1 -->
+        <div
+          data-tilt
+          class="bg-[#1d1836] rounded-2xl overflow-hidden border border-white/10 hover:border-cyan-500 transition duration-500 shadow-lg"
+        >
+          <img src="assets/wit-vrtour.png" class="w-full h-48 object-cover" />
+
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">WIT-Virtual Tour 360</h3>
+            <p class="text-gray-400 text-sm mb-4">
+              Web virtual tour 360° untuk WIT, menampilkan
+              panorama interaktif dan hotspot informasi. Ini juga merupakan project yang saya kerjakan selama masa internship di WIT.
+            </p>
+
+            <!-- Tech Stack -->
+            <div class="flex flex-wrap gap-2 mb-4 text-xs">
+              <span class="bg-cyan-600/20 text-cyan-400 px-3 py-1 rounded-full"
+                >React</span
+              >
+              <span class="bg-cyan-600/20 text-cyan-400 px-3 py-1 rounded-full"
+                >JavaScript</span
+              >
+              <span class="bg-cyan-600/20 text-cyan-400 px-3 py-1 rounded-full"
+                >Tailwind</span
+              >
+            </div>
+
+            <div class="flex gap-4">
+              <a
+                href="#"
+                class="text-sm px-4 py-2 bg-cyan-600 rounded-lg hover:bg-cyan-700 transition"
+              >
+                Live Demo
+              </a>
+              <a
+                href="#"
+                class="text-sm px-4 py-2 border border-cyan-600 rounded-lg hover:bg-cyan-600 transition"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD 2 -->
+        <div
+          data-tilt
+          class="bg-[#1d1836] rounded-2xl overflow-hidden border border-white/10 hover:border-cyan-500 transition duration-500 shadow-lg"
+        >
+          <img src="assets/SkadaciTour.png" class="w-full h-48 object-cover" />
+
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">SkadaciTour</h3>
+            <p class="text-gray-400 text-sm mb-4">
+              Website virtual tour 360° untuk SMK Negeri 2 Cimahi, menampilkan panorama interaktif dan informasi sekolah. Dibangun dengan Javascript dengan menggunakan kamera insta 360\
+              untuk tampilan yang responsif dan mudah digunakan. Ini merupakan tugas akhir kelas 11 saya.
+            </p>
+
+            <div class="flex flex-wrap gap-2 mb-4 text-xs">
+              <span class="bg-cyan-600/20 text-cyan-400 px-3 py-1 rounded-full"
+                >Javascript</span
+              >
+              <span class="bg-cyan-600/20 text-cyan-400 px-3 py-1 rounded-full"
+                >Marzipano</span
+              >
+              <span class="bg-cyan-600/20 text-cyan-400 px-3 py-1 rounded-full"
+                >Bootstrap</span
+              >
+            </div>
+
+            <div class="flex gap-4">
+              <a
+                href="#"
+                class="text-sm px-4 py-2 bg-cyan-600 rounded-lg hover:bg-cyan-700 transition"
+              >
+                Live Demo
+              </a>
+              <a
+                href="#"
+                class="text-sm px-4 py-2 border border-cyan-600 rounded-lg hover:bg-cyan-600 transition"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD 3 -->
+        <div
+          data-tilt
+          class="bg-[#1d1836] rounded-2xl overflow-hidden border border-white/10 hover:border-cyan-500 transition duration-500 shadow-lg"
+        >
+          <img src="assets/peminjaman.png" class="w-full h-48 object-cover" />
+
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Peminjaman Alat</h3>
+            <p class="text-gray-400 text-sm mb-4">
+                Penugasan membuat sistem peminjaman alat berbasis web untuk sekolah, 
+                dengan fitur manajemen inventaris, peminjaman, dan pengembalian. 
+                Dibangun menggunakan PHP dan MySQL untuk backend, serta w3css untuk frontend yang responsif.
+                Merupakan tugas ujikompetensi keahlian kelas 12 saya.
+            </p>
+
+            <div class="flex flex-wrap gap-2 mb-4 text-xs">
+              <span class="bg-cyan-600/20 text-cyan-400 px-3 py-1 rounded-full"
+                >PHP</span
+              >
+              <span class="bg-cyan-600/20 text-cyan-400 px-3 py-1 rounded-full"
+                >MySQL</span
+              >
+              <span class="bg-cyan-600/20 text-cyan-400 px-3 py-1 rounded-full"
+                >w3css</span
+              >
+            </div>
+
+            <div class="flex gap-4">
+              <a
+                href="#"
+                class="text-sm px-4 py-2 bg-cyan-600 rounded-lg hover:bg-cyan-700 transition"
+              >
+                Live Demo
+              </a>
+              <a
+                href="#"
+                class="text-sm px-4 py-2 border border-cyan-600 rounded-lg hover:bg-cyan-600 transition"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD 4 -->
+        <div
+          data-tilt
+          class="bg-[#1d1836] rounded-2xl overflow-hidden border border-white/10 hover:border-cyan-500 transition duration-500 shadow-lg"
+        >
+          <img src="assets/agenda-kelas.png" class="w-full h-48 object-cover" />
+
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Agenda Kelas</h3>
+            <p class="text-gray-400 text-sm mb-4">
+              Sistem agenda kelas berbasis web yang memungkinkan guru dan siswa untuk mengelola jadwal pelajaran, tugas, dan kegiatan sekolah. Dibangun menggunakan PHP dan MySQL untuk backend, serta CSS untuk frontend yang responsif.
+            </p>
+
+            <div class="flex flex-wrap gap-2 mb-4 text-xs">
+              <span class="bg-cyan-600/20 text-cyan-400 px-3 py-1 rounded-full"
+                >PHP</span
+              >
+              <span class="bg-cyan-600/20 text-cyan-400 px-3 py-1 rounded-full"
+                >MySQL</span
+              >
+              <span class="bg-cyan-600/20 text-cyan-400 px-3 py-1 rounded-full"
+                >Javascript</span>
+              <span class="bg-cyan-600/20 text-cyan-400 px-3 py-1 rounded-full"
+                >CSS</span
+              >
+            </div>
+
+            <div class="flex gap-4">
+              <a
+                href="#"
+                class="text-sm px-4 py-2 bg-cyan-600 rounded-lg hover:bg-cyan-700 transition"
+              >
+                Live Demo
+              </a>
+              <a
+                href="#"
+                class="text-sm px-4 py-2 border border-cyan-600 rounded-lg hover:bg-cyan-600 transition"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD 5 -->
+        <div
+          data-tilt
+          class="bg-[#1d1836] rounded-2xl overflow-hidden border border-white/10 hover:border-cyan-500 transition duration-500 shadow-lg"
+        >
+          <img src="assets/photoboth.png" class="w-full h-48 object-cover" />
+
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Photoboth Website</h3>
+            <p class="text-gray-400 text-sm mb-4">
+                Website photoboth sederhana yang memungkinkan pengguna untuk mengambil foto dengan efek filter dan menyimpannya. Dibangun menggunakan JavaScript untuk menangani kamera dan efek, serta TailwindCSS untuk desain yang responsif. Merupakan project pribadi yang saya buat untuk belajar interaksi kamera di web.
+            </p>
+
+            <div class="flex flex-wrap gap-2 mb-4 text-xs">
+              <span class="bg-cyan-600/20 text-cyan-400 px-3 py-1 rounded-full"
+                >Tailwind</span
+              >
+              <span class="bg-cyan-600/20 text-cyan-400 px-3 py-1 rounded-full"
+                >JavaScript</span
+              >
+              <span class="bg-cyan-600/20 text-cyan-400 px-3 py-1 rounded-full"
+                >Photoshop</span
+              >
+            </div>
+
+            <div class="flex gap-4">
+              <a
+                href="#"
+                class="text-sm px-4 py-2 bg-cyan-600 rounded-lg hover:bg-cyan-700 transition"
+              >
+                Live Demo
+              </a>
+              <a
+                href="#"
+                class="text-sm px-4 py-2 border border-cyan-600 rounded-lg hover:bg-cyan-600 transition"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD 6 -->
+        <div
+          data-tilt
+          class="bg-[#1d1836] rounded-2xl overflow-hidden border border-white/10 hover:border-cyan-500 transition duration-500 shadow-lg"
+        >
+          <img src="assets/SundaCode.png" class="w-full h-48 object-cover" />
+
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">SundaCode</h3>
+            <p class="text-gray-400 text-sm mb-4">
+                Website edukasi belajar bahasa Sunda dengan fitur interaktif dan kuis. Dibangun menggunakan JavaScript untuk logika interaktif, TailwindCSS untuk desain yang responsif, dan AOS untuk animasi scroll yang menarik. Merupakan project pribadi yang saya buat untuk mempromosikan budaya Sunda melalui teknologi web. Merupakan tugas pertama saya bersama teman teman saya.
+            </p>
+
+            <div class="flex flex-wrap gap-2 mb-4 text-xs">
+              <span class="bg-cyan-600/20 text-cyan-400 px-3 py-1 rounded-full"
+                >Tailwind</span
+              >
+              <span class="bg-cyan-600/20 text-cyan-400 px-3 py-1 rounded-full"
+                >JavaScript</span
+              >
+              <span class="bg-cyan-600/20 text-cyan-400 px-3 py-1 rounded-full"
+                >HTML</span
+              >
+            </div>
+
+            <div class="flex gap-4">
+              <a
+                href="#"
+                class="text-sm px-4 py-2 bg-cyan-600 rounded-lg hover:bg-cyan-700 transition"
+              >
+                Live Demo
+              </a>
+              <a
+                href="#"
+                class="text-sm px-4 py-2 border border-cyan-600 rounded-lg hover:bg-cyan-600 transition"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="py-16 text-center border-t border-white/10 bg-[#0a0f2c]">
+      <h2 class="text-3xl font-semibold mb-4">Interested Working With Me?</h2>
+      <p class="text-gray-400 mb-6">
+        Saya siap membantu membuat website modern dan responsif.
+      </p>
+      <a
+        href="contact.html"
+        class="px-8 py-3 bg-gradient-to-r from-cyan-600 to-cyan-700 rounded-full hover:scale-105 transition"
+      >
+        Contact Me
+      </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#0a0f2c] text-white border-t border-cyan-400/20 mt-0">
+      <div class="max-w-6xl mx-auto px-6 py-12">
+        <div class="grid md:grid-cols-3 gap-10">
+          <!-- Brand -->
+          <div>
+            <h3 class="text-2xl font-bold">
+              Dzika<span class="text-cyan-400">.</span>
+            </h3>
+            <p class="text-gray-400 mt-4 leading-relaxed">
+              Frontend Developer passionate about building modern, interactive
+              and user-friendly web experiences.
+            </p>
+          </div>
+
+          <!-- Navigation -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Navigation</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a href="index.html" class="hover:text-cyan-400 transition"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="about.html" class="hover:text-cyan-400 transition"
+                  >Overview</a
+                >
+              </li>
+              <li>
+                <a href="project.html" class="hover:text-cyan-400 transition"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a href="experience.html" class="hover:text-cyan-400 transition"
+                  >Experience</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="hover:text-cyan-400 transition"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social -->
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Connect</h4>
+
+            <div class="flex gap-4">
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-lg bg-white border border-cyan-400/20 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/30 transition"
+              >
+                <img src="assets/linkedin-svgrepo-com.svg" class="size-10" />
+              </a>
+
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-lg bg-white border border-cyan-400/20 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/30 transition"
+              >
+                <img src="assets/github-142-svgrepo-com.svg" class="size-10" />
+              </a>
+
+              <a
+                href="#"
+                class="w-10 h-10 flex items-center justify-center rounded-lg bg-white border border-cyan-400/20 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/30 transition"
+              >
+                <img
+                  src="assets/instagram-167-svgrepo-com.svg"
+                  class="size-10"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom -->
+        <div
+          class="border-t border-cyan-400/10 mt-12 pt-6 text-center text-gray-500 text-sm"
+        >
+          © 2026 Dzika Azizil. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      VanillaTilt.init(document.querySelectorAll("[data-tilt]"), {
+        max: 15,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.2,
+      });
+    </script>
+  </body>
+</html>
